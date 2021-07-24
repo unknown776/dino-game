@@ -39,9 +39,9 @@ setInterval(() => {
         obstacle.classList.remove("obstacleAni");
         overaudio.play()
         isgameover = true;
-        if (score>0){
-            score = score - 1;
-        }
+        //if (score>0){
+        //    score = score - 1;
+        //}
     } else if(offsetX<80 && cross){
         if(isgameover===false){
             score+=1;
