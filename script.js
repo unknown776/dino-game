@@ -53,7 +53,9 @@ setInterval(() => {
             setTimeout(() => {
                 aniDur = parseFloat(window.getComputedStyle(obstacle, null).getPropertyValue('animation-duration'));
                 newDur = aniDur - 0.1
-                obstacle.style.animationDuration = newDur+'s';
+                if(newDur>1.9){
+                    obstacle.style.animationDuration = newDur+'s';
+                }
             }, 500);
         }
     }
